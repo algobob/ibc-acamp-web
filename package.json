@@ -1,0 +1,15 @@
+{
+  "name": "ibc-acamp-web",
+  "version": "1.0.0",
+  "description": "front end web module",
+  "main": "js/admin.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algobob/ibc-acamp-web"
+  },
+  "author": "Anderson Luiz",
+  "bugs": {
+    "url": "https://github.com/algobob/ibc-acamp-web/issues"
+  }
+}
