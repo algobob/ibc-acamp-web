@@ -31,25 +31,11 @@
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="css/themes/all-themes.css" rel="stylesheet" />
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.6/angular2-polyfills.js"></script>
-    <script src="https://code.angularjs.org/tools/system.js"></script>
-    <script src="https://code.angularjs.org/tools/typescript.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.6/Rx.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.6/angular2.dev.js"></script>
-    <script>
-      System.config({
-        transpiler: 'typescript',
-        typescriptOptions: { emitDecoratorMetadata: true },
-        packages: {'app': {defaultExtension: 'ts'}},
-        map: { 'app': './angular2/src/app' }
-      });
-      System.import('app/environment_main')
-            .then(null, console.error.bind(console));
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="app/app.js"></script>
+
 </head>
-<body class="theme-red">
+<body class="theme-red" ng-app="myApp" ng-controller="myCtrl">
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -58,5 +44,5 @@
                     <a class="navbar-brand" href="index.html">IBC - ACAMPAMENTOS</a>
                 </div>
             </div>
-        </nav>
+        </nav>       
 </body>
